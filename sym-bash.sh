@@ -7,6 +7,6 @@ function myreadlink() {
 	echo $PWD/$(basename $1) # or  echo $PWD/${1##*/}
     )
 }
-ln -s $(readlink .bash_profile) ~/.bash_profile
-ln -s $(readlink .git-prompt.sh) ~/.git-prompt.sh
-ln -s $(readlink .git-completion.bash) ~/.git-completion.bash
+ln -s $(myreadlink .bash_profile) ~/.bash_profile
+ln -s $(myreadlink .git-prompt.sh) ~/.git-prompt.sh
+ln -s $(myreadlink .git-completion.bash) ~/.git-completion.bash
