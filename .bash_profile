@@ -8,3 +8,10 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 9)
 export PATH=$JAVA_HOME/bin:$PATH
 # Bash completion
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+# aliases
+# list with:
+# h: human readable file sizes
+# G: coloured output
+# F: / after directories (+ others)
+# l: list in long format
+alias lc='ls -hGFl'
