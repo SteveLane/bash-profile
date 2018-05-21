@@ -15,3 +15,8 @@ export PATH=$JAVA_HOME/bin:$PATH
 # F: / after directories (+ others)
 # l: list in long format
 alias lc='ls -hGFl'
+# python3 web server
+alias serve='python3 -m http.server'
+# makedeps graph (requires docker image)
+# docker image: docker pull stevelane/makedeps-graph
+alias depsgraph='docker run -v $(pwd):/tmp/graph stevelane/makedeps-graph'
