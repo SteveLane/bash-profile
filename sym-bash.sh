@@ -21,6 +21,6 @@ function myscripts() {
 	echo $PWD/$(basename $1)
     )
 }
-ln -s $(myscripts scripts/docker-cleanup.sh) /usr/local/bin/docker-cleanup
-ln -s $(myscripts scripts/reviewer-responses.sh) \
-   /usr/local/bin/reviewer-responses
+# ln -s $(myscripts scripts/docker-cleanup.sh) /usr/local/bin/docker-cleanup
+# ln -s $(myscripts scripts/reviewer-responses.sh) \
+#    /usr/local/bin/reviewer-responses
