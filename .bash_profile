@@ -4,7 +4,7 @@ source ~/.git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
 export PS1='\e[1;32m\w\e[1;31m$(__git_ps1 " (%s)")\e[0m\n$ '
 # For (oracle) java through brew
-export JAVA_HOME=$(/usr/libexec/java_home -v 9)
+export JAVA_HOME=$(/usr/libexec/java_home -v 12)
 export PATH=$JAVA_HOME/bin:$PATH
 # Bash completion
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
@@ -20,3 +20,4 @@ alias serve='python3 -m http.server'
 # makedeps graph (requires docker image)
 # docker image: docker pull stevelane/makedeps-graph
 alias depsgraph='docker run -v $(pwd):/tmp/graph stevelane/makedeps-graph'
+# export PATH=/usr/local/clang8/bin:$PATH
